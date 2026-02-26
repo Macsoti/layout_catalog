@@ -28,11 +28,11 @@
     line-height: $lh-lg;
     color: $main-color;
     transition: color 0.3s ease;
-
-    &:hover {
-      color: $hover-color;
-    }
   }
+
+  &:hover &__title {
+  color: $hover-color;
+}
 
   &__code {
     margin: 0 0 $space-md;

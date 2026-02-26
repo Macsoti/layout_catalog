@@ -18,6 +18,10 @@
 
   background-color: $button-color;
 
+  transition:
+  color 0.3s ease,
+  background-color 0.3s ease;
+
   &:hover {
     border: $border-r solid $button-color;
     color: $button-color;
