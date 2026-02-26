@@ -1,3 +1,48 @@
 body {
   margin: 0;
 }
+
+$card-width: 200px;
+
+html {
+  font-family: Roboto, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, $card-width);
+  gap: 46px 48px;
+  padding: 50px 40px;
+  justify-content: center;
+}
+
+@media (min-width: 488px) {
+  .cards {
+    grid-template-columns: repeat(2, $card-width);
+  }
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, $card-width);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(4, $card-width);
+  }
+}
+
+@import 'variables';
+@import 'blocks/header';
+@import 'blocks/button';
+@import 'blocks/card';
+@import 'blocks/nav';
+@import 'blocks/price';
+@import 'blocks/reviews';
+@import 'blocks/stars';
