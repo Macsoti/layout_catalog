@@ -20,6 +20,8 @@
     height: $link-height;
     line-height: $lh-xxl;
     font-size: $fs-sm;
+    transition: color 0.3s ease;
+
 
     &.is-active {
     color: $main-blue;
